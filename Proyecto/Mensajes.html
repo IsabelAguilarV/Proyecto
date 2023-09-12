@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensajes</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style>
+        .navbar-toggler {
+            background-color: #4E35F2; 
+            border-color: #4D3F9E;
+        }
+        .offcanvas {
+            background-color: #5134E8;
+        }
+    </style>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <br>
+        <br>
+        <div class="row" style="background-color: #0D0070;">
+            <div class="col-12 text-center">
+                <img src="./img/mss.jpg" alt="" width="90%" height="100%">
+            </div>
+        </div>
+        <div class="row" style="background-color: #624BE1;">
+            <div class="col"> 
+            </div>
+            <div class="col">
+                <nav class="navbar bg-light fixed-top">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">Barra de Navegación</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Barra de Navegación</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Arquitectura</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="/Arquitectura.html">Arquitectura</a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item" href="/Cookies.html">Cookies</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/Mensajes.html">Mensajes</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/Metodos.html">Métodos de HTTP</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/CEstado.html">Código de estado HTTP</a>
+                                    </li>
+                                </ul>
+                                <form class="d-flex mt-3" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                                    <button class="btn btn-light" type="submit">Buscar</button>
+                               </form>
+                           </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <br>
+            <div class="col">
+            </div>
+        </div>
+        <div class="row" style="background-color: #624BE1;">
+            <div class="col">
+                <h1>MENSAJES DEL PROTOCOLO HTTP</h1>
+            </div>
+            <br>
+        </div>
+        <div class="row" style="background-color: #3D90D9;">
+            <div class="col">
+                <P style="text-align: justify;">Una solicitud HTTP es la forma en que las plataformas de comunicación de Internet, como los navegadores web, 
+                    piden la información que necesitan para cargar un sitio web. Cada solicitud HTTP realizada por Internet lleva consigo 
+                    una serie de datos codificados que contienen diferentes tipos de información. Una solicitud HTTP típica contiene:</P>
+                    <ul>
+                        <li>Tipo de versión de HTTP</li>
+                        <li>Una URL</li>
+                        <li>Un método HTTP</li>
+                        <li>Encabezados de solicitud HTTP</li>
+                        <li>Cuerpo HTTP opcional.</li>
+                    </ul>
+            </div>
+            <br>
+        </div>
+        <div class="row" style="background-color: #3D90D9;">
+            <div class="col">
+                <h4>Cabeceras de petición</h4>
+                <p style="text-align: justify;">Los encabezados HTTP contienen información de texto almacenada en pares clave-valor y se incluyen en cada solicitud 
+                    HTTP. Estos encabezados comunican información básica, como por ejemplo qué navegador utiliza el cliente y qué datos
+                     solicita.</p>
+            </div>
+            <div class="col">
+            </div>
+            <div class="col">
+                <h4>Cuerpo de solicitud HTTP</h4>
+                <p style="text-align: justify;">El cuerpo de una solicitud es la parte que contiene el "cuerpo" de la información que está transfiriendo la solicitud.
+                     El cuerpo de una solicitud HTTP contiene toda la información que se envía al servidor web, como un nombre de usuario y 
+                     una contraseña, o cualquier otro dato introducido en un formulario.</p>
+            </div>
+        </div>
+        <div class="row" style="background-color: #3D90D9;">
+            <div class="col">
+                <h4>Tipos principales de cabecera</h4>
+                <p style="text-align: justify;">Hay multitud de cabeceras con información diferente. A continuación, se van detallar algunas de las más comunes y que
+                     nos pueden proporcionar información útil:</p>
+                     <ul>
+                        <li>Host: indica el nombre del dominio.</li>
+                        <li>Age: indica cuantos segundos lleva cacheado el objeto/recurso en un servidor proxy intermedio.</li>
+                        <li>Cache-control: Cuánto tiempo puede estar un objeto en caché. El tiempo viene expresado en segundos.</li>
+                        <li>Content-Encoding: indica qué codificación de contenido se aplica en el recurso.</li>
+                        <li>Location: Indica la url destino en caso de redirección.</li>
+                        <li>Set-Cookie: Indica la cookie establecida en el cliente.</li>
+                        <li>Server: Información sobre el servidor que responde nuestra petición.</li>
+                        <li>Status: Código de respuesta de la petición.</li>
+                        <li>User-Agent: Indica la herramienta desde la cual se ha realizado la petición.</li>
+                        <li>Vary: Indica los valores y cabeceras que han de tenerse en cuenta a la hora de generar/solicitar un archivo desde la caché.</li>
+                     </ul>
+            </div>
+        </div>
+        <div class="row" style="background-color: #3D90D9;">
+            <div class="col">
+                <h4>Mensajes de respuesta</h4>
+                <p style="text-align: justify;">Una respuesta HTTP es lo que los clientes web (normalmente los navegadores) reciben de un servidor de Internet en respuesta
+                     a una solicitud HTTP. Estas respuestas comunican información valiosa basada en lo que se pidió en la solicitud HTTP. 
+                     Una respuesta HTTP típica contiene:</p>
+                     <ul>
+                        <li>Un código de estado HTTP</li>
+                        <li>Encabezados de respuesta HTTP</li>
+                        <li>Cuerpo de HTTP opcional</li>
+                     </ul>
+            </div>
+        </div>
+        <div class="row" style="background-color: #3D90D9;">
+            <div class="col">
+                <h4>Encabezados de respuesta</h4>
+                <p style="text-align: justify;">Al igual que una solicitud HTTP, una respuesta HTTP viene con encabezados que transmiten información importante, 
+                    como el idioma y el formato de los datos que se envían en el cuerpo de la respuesta.</p>
+            </div>
+            <div class="col">
+                <div class="col">
+                    
+                </div>
+            </div>
+            <div class="col">
+                <h4>Cuerpo de respuesta</h4>
+                <p style="text-align: justify;">Las respuestas HTTP correctas a solicitudes "GET" normalmente tienen un cuerpo que contiene la información solicitada. 
+                    En la mayoría de las solicitudes web, son los datos HTML que un navegador web convertirá en una página web.</p>
+            </div>
+            <br>
+        </div>
+       
+        <div class="row fila-fin">
+            <div class="col-12">
+                <p>© Isabel Aguilar 		5°J</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>

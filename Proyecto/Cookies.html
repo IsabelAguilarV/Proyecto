@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <style>
+        .navbar-toggler {
+            background-color: #4E35F2; 
+            border-color: #4D3F9E;
+        }
+        .offcanvas {
+            background-color: #5134E8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <br>
+        <br>
+        <div class="row" style="background-color: #0D0070;">
+            <div class="col-12 text-center">
+                   <img src="./img/cookies.png" alt="" width="90%" height="100%">
+                </div>
+            </div>
+            <div class="row" style="background-color: #624BE1;">
+                <div class="col"> 
+                </div>
+                <div class="col">
+                    <nav class="navbar bg-light fixed-top">
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="#">Barra de Navegación</a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Barra de Navegación</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Arquitectura</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="/Arquitectura.html">Arquitectura</a></li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="/Cookies.html">Cookies</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/Mensajes.html">Mensajes</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/Metodos.html">Métodos de HTTP</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/CEstado.html">Código de estado HTTP</a>
+                                        </li>
+                                    </ul>
+                                    <form class="d-flex mt-3" role="search">
+                                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                                        <button class="btn btn-light" type="submit">Buscar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <br>
+            <div class="col">
+            </div>
+        </div>
+        <div class="row" style="background-color: #624BE1;">
+            <div class="col">
+                <h1>COOKIES</h1>
+            </div>
+            <br>
+        </div>
+        <div class="row" style="background-color: #3D90D9;">
+            <div class="col">
+                <p style="text-align: justify;">Las cookies son un mecanismo general mediante el que los programas de un servidor web pueden almacenar información 
+                    en la parte del cliente de la conexión. Es una forma de añadir estado a las conexiones HTTP, aunque el manejo de cookies no es parte del protocolo HTTP, 
+                    pero es soportado por la mayoría de los clientes. Las cookies son objetos de tipo:</p>
+                <p style="text-align: justify;">nombre = valor</p>
+                <p style="text-align: justify;">donde se asigna un valor determinado (una cadena de texto) a una variable del nombre indicado. El funcionamiento es: el servidor, 
+                    con la cabecera Set-Cookie, envía al cliente información de estado que éste almacenará.</p>
+            </div>
+            <br>
+        </div>
+        <div class="row fila-fin">
+            <div class="col-12">
+                <p>© Isabel Aguilar 		5°J</p>
+            </div>
+        </div>
+    </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

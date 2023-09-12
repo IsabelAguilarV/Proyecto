@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Código de Estado</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style>
+        .navbar-toggler {
+            background-color: #4E35F2; 
+            border-color: #4D3F9E;
+        }
+        .offcanvas {
+            background-color: #5134E8;
+        }
+    </style>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <br>
+        <br>
+        <div class="row" style="background-color: #0D0070;">
+            <div class="col-12 text-center">
+                <img src="./img/CE.png" alt="" width="90%" height="100%">
+            </div>
+        </div>
+        <div class="row" style="background-color: #624BE1;">
+            <div class="col"> 
+            </div>
+            <div class="col">
+                <nav class="navbar bg-light fixed-top">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">Barra de Navegación</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Barra de Navegación</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Arquitectura</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="/Arquitectura.html">Arquitectura</a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item" href="/Cookies.html">Cookies</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/Mensajes.html">Mensajes</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/Metodos.html">Métodos de HTTP</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/CEstado.html">Código de estado HTTP</a>
+                                    </li>
+                                </ul>
+                                <form class="d-flex mt-3" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                                    <button class="btn btn-light" type="submit">Buscar</button>
+                               </form>
+                           </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <br>
+            <div class="col">
+            </div>
+        </div>
+        <div class="row" style="background-color: #624BE1;">
+            <div class="col">
+                <h1>CÓDIGO DE ESTADO DEL PROTOCOLO HTTP</h1>
+            </div>
+            <br>
+        </div>
+        <div class="row" style="background-color: #3D90D9;">
+            <div class="col">
+                <P>Los códigos de estado HTTP son códigos de 3 dígitos que se utilizan con mayor frecuencia para indicar si 
+                    una solicitud HTTP se ha completado con éxito. Los códigos de estado se dividen en los siguientes 5 bloques:</P>
+                    <ul>
+                        <li>1xx Informativo</li>
+                        <li>2xx Éxito</li>
+                        <li>3xx Redirección</li>
+                        <li>Errores de cliente 4xx</li>
+                        <li>5xx Error del servidor</li>
+                    </ul>
+            </div>
+            <br>
+        </div>
+        <div class="row" style="background-color: #3D90D9;">
+            <div class="col">
+                <p style="text-align: justify;">Las "xx" hace referencia a diferentes números entre 00 y 99. Los códigos de estado que empiezan por el número "2" 
+                    indican que la solicitud se ha realizado correctamente. Si la respuesta empieza con un "4" o un "5", significa 
+                    que se ha producido un error y que la página web no se mostrará. Un código de estado que empieza con un "4" 
+                    indica un error del lado del cliente. Un código de estado que empieza con un "5" indica que algo ha fallado en el 
+                    lado del servidor. Los códigos de estado también pueden empezar con un "1" o un "3", que indican, respectivamente, 
+                    una respuesta informativa y una redirección.</p>
+            </div>
+        </div>
+        <div class="row fila-fin">
+            <div class="col-12">
+                <p>© Isabel Aguilar 		5°J</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>

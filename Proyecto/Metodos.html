@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Métodos</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style>
+        .navbar-toggler {
+            background-color: #4E35F2; 
+            border-color: #4D3F9E;
+        }
+        .offcanvas {
+            background-color: #5134E8;
+        }
+    </style>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <br>
+        <br>
+        <div class="row" style="background-color: #0D0070;">
+            <div class="col-12 text-center">
+                <img src="./img/Metodos.png" alt="" width="90%" height="100%">
+            </div>
+        </div>
+        <div class="row" style="background-color: #624BE1;">
+            <div class="col"> 
+            </div>
+            <div class="col">
+                <nav class="navbar bg-light fixed-top">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">Barra de Navegación</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Barra de Navegación</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Arquitectura</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="/Arquitectura.html">Arquitectura</a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item" href="/Cookies.html">Cookies</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/Mensajes.html">Mensajes</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/Metodos.html">Métodos de HTTP</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/CEstado.html">Código de estado HTTP</a>
+                                    </li>
+                                </ul>
+                                <form class="d-flex mt-3" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                                    <button class="btn btn-light" type="submit">Buscar</button>
+                               </form>
+                           </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <br>
+            <div class="col">
+            </div>
+        </div>
+        <div class="row" style="background-color: #624BE1;">
+            <div class="col">
+                <h1>MÉTODOS DEL PROTOCOLO HTTP</h1>
+            </div>
+            <br>
+            <br>
+        </div>
+        <div class="row" style="background-color: #3D90D9;">
+            <div class="col">
+                <h4>GET</h4>
+                <p style="text-align: justify;">Este método del protocolo HTTP solicita una representación de un recurso determinado. Las peticiones que utilicen 
+                    el método GET, solo deben ser usadas para la recuperación de información, por lo que no pueden incluir datos.</p>
+            </div>
+            <div class="col">
+                <h4>POST</h4>
+                <p style="text-align: justify;">De los protocolos HTTP, tiene la función de enviar datos para que sean procesados en un recurso especificado, lo 
+                    que usualmente trae como consecuencia efectos secundarios en el servidor, como por ejemplos, cambios en su estado.</p>
+            </div>
+            <div class="col">
+                <h4>PUT</h4>
+                <p style="text-align: justify;">El método PUT del protocolo se encarga de reemplazar las representaciones que tenga el recurso de destino con la carga
+                     útil de la petición realizada.</p>
+            </div>
+            <br>
+        </div>
+        <div class="row" style="background-color:  #3D90D9;">
+            <div class="col">
+                <h4>CONNECT</h4>
+                <p style="text-align: justify;">Tiene la función de establecer un túnel hacia el servidor que haya sido identificado con el recurso.</p>
+            </div>
+            <div class="col">
+                <h4>DELETE</h4>
+                <p style="text-align: justify;">El método DELETE de los protocolos HTTP estará a cargo de eliminar un recurso especificado por el usuario.</p>
+            </div>
+            <div class="col">
+                <h4>OPTIONS</h4>
+                <p style="text-align: justify;">Este método de los protocolos HTTP es usado con el fin de describir las opciones de comunicación que tiene el recurso de destino.</p>
+           </div>
+           <br>
+        </div>
+        <div class="row fila-fin">
+            <div class="col-12">
+                <p>© Isabel Aguilar 		5°J</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>

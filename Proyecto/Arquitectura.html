@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquitectura</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <style>
+        .navbar-toggler {
+            background-color: #4E35F2; 
+            border-color: #4D3F9E;
+        }
+        .offcanvas {
+            background-color: #5134E8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <br>
+        <br>
+        <div class="row" style="background-color: #0D0070;">
+            <div class="col-12 text-center">
+                   <img src="./img/arqui.png" alt="" width="90%" height="100%">
+                </div>
+            </div>
+            <div class="row" style="background-color: #624BE1;">
+                <div class="col"> 
+                </div>
+                <div class="col">
+                    <nav class="navbar bg-light fixed-top">
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="#">Barra de Navegación</a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Barra de Navegación</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Arquitectura</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="/Arquitectura.html">Arquitectura</a></li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="/Cookies.html">Cookies</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/Mensajes.html">Mensajes</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/Metodos.html">Métodos de HTTP</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/CEstado.html">Código de estado HTTP</a>
+                                        </li>
+                                    </ul>
+                                    <form class="d-flex mt-3" role="search">
+                                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                                        <button class="btn btn-light" type="submit">Buscar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <br>
+            <div class="col">
+            </div>
+        </div>
+        <div class="row" style="background-color: #624BE1;">
+            <div class="col">
+                <h1>ARQUITECTURA DEL PROTOCOLO HTTP</h1>
+            </div>
+            <br>
+        </div>
+        <div class="row" style="background-color: #3D90D9;">
+            <div class="col">
+                <h4>Cliente: el agente del usuario</h4>
+                <p style="text-align: justify;">El agente del usuario, es cualquier herramienta que actué en representación del usuario. 
+                    Esta función es realizada en la mayor parte de los casos por un navegador Web. 
+                    Hay excepciones, como el caso de programas específicamente usados por desarrolladores para desarrollar y 
+                    depurar sus aplicaciones. El navegador es siempre el que inicia una comunicación (petición), y el servidor 
+                    nunca la comienza (hay algunos mecanismos que permiten esto, pero no son muy habituales). 
+                    Para poder mostrar una página Web, el navegador envía una petición de documento HTML al servidor. 
+                    Entonces procesa este documento, y envía más peticiones para solicitar scripts, hojas de estilo (CSS), y 
+                    otros datos que necesite (normalmente vídeos y/o imágenes). El navegador, une todos estos documentos y datos, y 
+                    compone el resultado final: la página Web.</p>
+            </div>
+            <div class="col">
+                <h4>El servidor Web</h4>
+                <p style="text-align: justify;">Un servidor conceptualmente es una única entidad, aunque puede estar formado por varios elementos, que se reparten 
+                    la carga de peticiones, (load balancing), u otros programas, que gestionan otros computadores 
+                    (como cache, bases de datos, servidores de correo electrónico) y que generan parte o todo el documento que ha sido 
+                    pedido. Un servidor no tiene que ser necesariamente un único equipo físico, aunque si que varios servidores pueden 
+                    estar funcionando en un único computador. En el estándar HTTP/1.1 y Host , pueden compartir la misma dirección de IP.</p>
+            </div>
+            <div class="col">
+                <h4>Proxies</h4>
+                <p style="text-align: justify;">Entre el cliente y el servidor, además existen distintos dispositivos que gestionan los mensajes HTTP. 
+                    Dada la arquitectura en capas de la Web, la mayoria de estos dispositivos solamente gestionan estos mensajes en los 
+                    niveles de protocolo inferiores: capa de transporte, capa de red o capa física, siendo así transparentes para la capa 
+                    de comunicaciones de aplicación del HTTP, además esto aumenta el rendimiento de la comunicación. 
+                    Aquellos dispositivos, que sí operan procesando la capa de aplicación son conocidos como proxies. 
+                    Estos pueden ser transparentes, o no (modificando las peticiones que pasan por ellos), y realizan varias funciones:</p>
+                    <ul>
+                        <li><b>Caching:</b> la caché puede ser pública o privada, como la caché de un navegador.</li>
+                        <li><b>Filtrado:</b> anti-virus, control parental.</li>
+                        <li><b>Balanceo de carga de peticiones:</b> permite a varios servidores responder a la carga total de peticiones que reciben.</li>
+                        <li><b>Autentificación:</b> control al acceso de recursos y datos.</li>
+                        <li><b>Registro de eventos:</b> tener un histórico de los eventos que se producen.</li>
+                    </ul>
+            </div>
+            <br>
+        </div>
+        <div class="row fila-fin">
+            <div class="col-12">
+                <p>© Isabel Aguilar 		5°J</p>
+            </div>
+        </div>
+    </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
